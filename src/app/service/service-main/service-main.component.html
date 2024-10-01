@@ -1,0 +1,116 @@
+<app-header></app-header>
+<div class="service">
+    <div class="filter-sidebar">
+        <h3>Filters</h3>
+
+        <!-- Service Type Filter -->
+        <div class="filter-section">
+            <h4>Service Type</h4>
+            <label><input type="checkbox" name="service-type" value="Plumbing"> Plumbing</label><br>
+            <label><input type="checkbox" name="service-type" value="Electrician"> Electrician</label><br>
+            <label><input type="checkbox" name="service-type" value="Cleaning"> Cleaning</label><br>
+            <label><input type="checkbox" name="service-type" value="Other"> Other</label>
+        </div>
+
+        <!-- Location Filter -->
+        <div class="filter-section">
+            <label for="chennai-districts">Select your Location:</label>
+            <select id="chennai-districts" name="chennai-districts">
+                <option value="adyar">Adyar</option>
+                <option value="ambattur">Ambattur</option>
+                <option value="anna-nagar">Anna Nagar</option>
+                <option value="ashok-nagar">Ashok Nagar</option>
+                <option value="chromepet">Chromepet</option>
+                <option value="egmore">Egmore</option>
+                <option value="guindy">Guindy</option>
+                <option value="kilpauk">Kilpauk</option>
+                <option value="kodambakkam">Kodambakkam</option>
+                <option value="kolathur">Kolathur</option>
+                <option value="madipakkam">Madipakkam</option>
+                <option value="maduravoyal">Maduravoyal</option>
+                <option value="meenambakkam">Meenambakkam</option>
+                <option value="mogappair">Mogappair</option>
+                <option value="mount-road">Mount Road</option>
+                <option value="mylapore">Mylapore</option>
+                <option value="nungambakkam">Nungambakkam</option>
+                <option value="perambur">Perambur</option>
+                <option value="porur">Porur</option>
+                <option value="purasawalkam">Purasawalkam</option>
+                <option value="saidapet">Saidapet</option>
+                <option value="t-nagar">T. Nagar</option>
+                <option value="tambaram">Tambaram</option>
+                <option value="thiruvanmiyur">Thiruvanmiyur</option>
+                <option value="triplicane">Triplicane</option>
+                <option value="vadapalani">Vadapalani</option>
+                <option value="velachery">Velachery</option>
+                <option value="villivakkam">Villivakkam</option>
+                <option value="virugambakkam">Virugambakkam</option>
+            </select>
+        </div>
+
+        <!-- Rating Filter -->
+        <div class="filter-section">
+            <h4>Rating</h4>
+            <label><input type="radio" name="rating" value="5"> 5 Stars</label><br>
+            <label><input type="radio" name="rating" value="4"> 4 Stars & up</label><br>
+            <label><input type="radio" name="rating" value="3"> 3 Stars & up</label><br>
+            <label><input type="radio" name="rating" value="2"> 2 Stars & up</label><br>
+            <label><input type="radio" name="rating" value="1"> 1 Star & up</label>
+        </div>
+
+        <!-- Price Range Filter -->
+        <div class="filter-section">
+            <h4>Price Range</h4>
+            <input type="range" min="0" max="10000" value="1000" step="500" [(ngModel)]="priceValue">
+            <p>Range: ₹{{ priceValue }}</p>
+        </div>
+
+        <!-- Availability Filter -->
+        <div class="filter-section">
+            <h4>Availability</h4>
+            <label><input type="checkbox" name="availability" value="Weekdays"> Weekdays</label><br>
+            <label><input type="checkbox" name="availability" value="Weekends"> Weekends</label><br>
+            <label><input type="checkbox" name="availability" value="Evening"> Evening</label><br>
+        </div>
+
+        <!-- Distance Filter -->
+        <div class="filter-section">
+            <h4>Distance</h4>
+            <input type="range" min="1" max="20" value="5" [(ngModel)]="distanceValue">
+            <p>Within {{ distanceValue }} km</p>
+        </div>
+
+        <!-- Apply Button -->
+        <div class="filter-section">
+            <button (click)="applyFilters()">Apply Filters</button>
+        </div>
+    </div>
+
+
+    <div class="services-content">
+        <div class="header">
+            <h1>Our Services</h1>
+        </div>
+        <div class="card-row row-1">
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+        </div>
+        <div class="card-row row-1">
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+        </div>
+        <div class="card-row row-1">
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+        </div>
+        <div class="card-row row-1">
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

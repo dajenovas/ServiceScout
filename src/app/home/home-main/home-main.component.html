@@ -1,0 +1,84 @@
+<app-header></app-header>
+
+<div class="container-1">
+    <div class="welcome">
+        <div class="image">
+            <img src="../../../assets/Home/User/User.jpeg" alt="">
+        </div>
+        <div class="text">
+            <h1>Hello user,</h1>
+            <h2>Discover Local Experts at Your Fingertips!</h2>
+        </div>
+        <div class="block"></div>
+    </div>
+    <div class="popular-services-section">
+        <h2>Popular Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Plumber.png" />
+                    <span>Plumbers</span>
+                </a>
+            </div>
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Electriction.png" />
+                    <span>Electrictions</span>
+                </a>
+            </div>
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Tutor.png" alt="">
+                    <span>Tutors</span>
+                </a>
+            </div>
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Barber.png" />
+                    <span>Hair Dressers/Barbers</span>
+                </a>
+            </div>
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Carpenter.png" />
+                    <span>Carpenters</span>
+                </a>
+            </div>
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Mechanic.png" />
+                    <span>Mechanics</span>
+                </a>
+            </div>
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Cleaner.png" />
+                    <span>Cleaners</span>
+                </a>
+            </div>
+            <div class="service-item">
+                <a routerLink="">
+                    <img src="../../../assets/Home/Content/Painter.png" />
+                    <span>Painters</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <button class="explore" (click)="scrollDown()">Explore<br /><fa-icon [icon]="faDown"></fa-icon></button>
+    </div>
+    <div class="content-section" id="contentSection">
+        <div class="card-app">
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+        </div>
+        <div class="explore-more">
+            <a routerLink="/service">
+                <button>Explore More <fa-icon [icon]="faRight"></fa-icon></button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

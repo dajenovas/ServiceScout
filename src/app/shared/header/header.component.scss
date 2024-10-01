@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+.header {
+    background: #3b1a00;
+    -webkit-box-shadow: -1px 31px 67px -20px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 31px 67px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 31px 67px -20px rgba(0, 0, 0, 0.75);
+    font-family: "Akaya Kanadaka", system-ui;
+    font-style: normal;
+    display: flex;
+    padding-left: 100px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    animation: fade-down .5s ease-out;
+    img {
+        height: 90px;
+        padding: 20px;
+    }
+}
+
+.company-name {
+    animation: fade-down .5s ease-out;
+    background-image: linear-gradient(to right, #fb6e02, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navigation {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    ul {
+        display: flex;
+        animation: fade-in 1s ease;
+
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+            list-style: none;
+            
+
+            a {
+                text-decoration: none;
+                font-size: 27px;
+                background-image: linear-gradient(to right, #ffe3ce, #ff7700);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+
+            a:hover {
+                text-decoration: none;
+                font-size: 27px;
+                background-image: linear-gradient(to right, #ff0000, #ffffff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

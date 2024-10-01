@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+.service {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    width: 100%;
+}
+
+.filter-sidebar {
+    width: 250px;
+    background-color: #672200;
+    padding: 20px;
+    border: none;
+    -webkit-box-shadow: 10px 10px 35px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 35px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 35px 10px rgba(0, 0, 0, 0.75);
+
+    h3 {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #ffffff;
+    }
+
+    .filter-section {
+        margin-bottom: 20px;
+
+        h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="range"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        p {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #fff;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #ff8400;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f7c187;
+            color: black;
+        }
+    }
+}
+
+#chennai-districts {
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    h1 {
+        color: white;
+    }
+}
+
+.services-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

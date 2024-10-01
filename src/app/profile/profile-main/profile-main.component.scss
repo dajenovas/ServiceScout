@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 100px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
+    img {
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+
+.profile-details {
+    padding: 30px;
+    height: 200px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Bootstrap Styles
+
+.accordion {
+    width: 70%;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    
+    color: white;
+    background-color: rgb(186, 84, 0);
+}
